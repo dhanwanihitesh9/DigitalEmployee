@@ -1,0 +1,33 @@
+{
+  "name": "digital-employee",
+  "version": "1.0.0",
+  "description": "An intelligent digital employee that monitors email and performs actions based on content",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [
+    "email",
+    "automation",
+    "agent",
+    "digital-employee"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "imap": "^0.8.19",
+    "mailparser": "^3.6.5",
+    "nodemailer": "^6.9.7",
+    "winston": "^3.11.0",
+    "string-similarity": "^4.0.4",
+    "openai": "^4.24.0",
+    "chartjs-node-canvas": "^4.1.6",
+    "csv-parse": "^5.5.3",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
