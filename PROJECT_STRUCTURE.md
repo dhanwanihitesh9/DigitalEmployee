@@ -134,92 +134,9 @@ emailSender.sendEmail() with HTML
 User receives beautiful analysis report
 ```
 
-## 🔐 Security Layers
 
-```
-1. Environment Variables (.env)
-   ├─→ Email credentials
-   ├─→ OpenAI API key
-   └─→ Configuration
 
-2. Email Filtering
-   ├─→ Subject prefix check (strict)
-   ├─→ Date filtering
-   └─→ Duplicate prevention
-
-3. Error Handling
-   ├─→ Try-catch blocks
-   ├─→ Graceful degradation
-   └─→ User-friendly error messages
-
-4. Logging
-   ├─→ All operations logged
-   ├─→ No sensitive data in logs
-   └─→ Audit trail
-```
-
-## 🛠️ Technology Stack
-
-| Layer | Technology | Version |
-|-------|-----------|---------|
-| **Runtime** | Node.js | v14+ |
-| **Email (IMAP)** | imap | ^0.8.19 |
-| **Email Parsing** | mailparser | ^3.6.5 |
-| **Email Sending** | nodemailer | ^6.9.7 |
-| **Logging** | winston | ^3.11.0 |
-| **AI Analysis** | openai | ^4.24.0 |
-| **Charts** | chartjs-node-canvas | ^4.1.6 |
-| **CSV Parsing** | csv-parse | ^5.5.3 |
-| **PDF Parsing** | pdf-parse | ^1.1.1 |
-| **Pattern Matching** | string-similarity | ^4.0.4 |
-| **Environment** | dotenv | ^16.3.1 |
-
-## 📈 Scalability Considerations
-
-### Current Limitations
-- Single process (one email account)
-- Sequential email processing
-- In-memory processed email tracking
-- Local file logging
-
-### Future Enhancements
-- Multi-account support
-- Worker pool for parallel processing
-- Database for email tracking
-- Cloud logging (CloudWatch, etc.)
-- Queue system (RabbitMQ, Redis)
-- Microservices architecture
-
-## 🎯 Extension Points
-
-Add new features by:
-
-1. **New Action**: 
-   - Add handler in `actionHandlers.js`
-   - Map patterns in `actionMapping.js`
-
-2. **New Service**: 
-   - Create service in `services/`
-   - Import in action handlers
-
-3. **New Parser**: 
-   - Extend `statementParser.js`
-   - Support new file formats
-
-4. **New AI Feature**: 
-   - Extend `openaiService.js`
-   - Add new analysis methods
-
-## 📝 Configuration Files
-
-| File | Purpose | Required |
-|------|---------|----------|
-| `.env` | Environment variables | ✅ Yes |
-| `actionMapping.js` | Email → Action mappings | ✅ Yes |
-| `actionHandlers.js` | Action implementations | ✅ Yes |
-| `package.json` | Dependencies | ✅ Yes |
-
-## 🚀 Deployment Checklist
+## Deployment Checklist
 
 - [ ] Environment variables configured
 - [ ] Dependencies installed (`npm install`)
@@ -232,26 +149,10 @@ Add new features by:
 - [ ] Monitoring set up
 - [ ] Error alerting configured
 
-## 📞 Support & Maintenance
 
-### Daily Operations
-- Monitor `logs/combined.log`
-- Check OpenAI usage and costs
-- Verify email processing
-
-### Weekly Tasks
-- Review error logs
-- Rotate log files if needed
-- Update START_DATE if needed
-
-### Monthly Tasks
-- Update dependencies
-- Review and rotate API keys
-- Analyze usage patterns
-- Optimize action mappings
 
 ---
 
 **Version**: 1.0.0  
 **Last Updated**: January 29, 2026  
-**Maintained by**: Digital Employee Team
+**Maintained by**: Hitesh Dhanwani
